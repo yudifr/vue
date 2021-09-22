@@ -13,7 +13,7 @@
               <div class="col-lg order-lg-first">
                 <ul class="nav nav-tabs border-0 flex-column flex-lg-row">
                   <li class="nav-item">
-                    <a href="./index.html" class="nav-link"><i class="fe fe-home"></i> Home</a>
+                    <router-link to="/home" class="nav-link"><i class="fe fe-home"></i> Home</router-link>
                   </li>
                   <li class="nav-item">
                     <a href="javascript:void(0)" class="nav-link" data-toggle="dropdown"><i class="fe fe-box"></i> Interface</a>
@@ -32,6 +32,7 @@
                       <a href="./blog.html" class="dropdown-item ">Blog</a>
                       <a href="./carousel.html" class="dropdown-item ">Carousel</a>
                     </div>
+                    
                   </li>
                   <li class="nav-item dropdown">
                     <a href="javascript:void(0)" class="nav-link active" data-toggle="dropdown"><i class="fe fe-file"></i> Pages</a>
@@ -52,7 +53,7 @@
                     </div>
                   </li>
                   <li class="nav-item dropdown">
-                    <a href="./form-elements.html" class="nav-link"><i class="fe fe-check-square"></i> Forms</a>
+                    <router-link to="/home/home" class="nav-link"><i class="fe fe-check-square"></i> Forms</router-link>
                   </li>
                   <li class="nav-item">
                     <a href="./gallery.html" class="nav-link"><i class="fe fe-image"></i> Gallery</a>

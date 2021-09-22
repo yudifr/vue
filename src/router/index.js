@@ -2,11 +2,19 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Login from '../views/Login.vue'
 import NotFound from '../views/NotFound.vue'
+import Feed from '../components/home/Feed.vue'
 const routes = [
   {
     path: '/home',
     name: 'Home',
-    component: Home
+    component: Home,
+    children: [
+      {
+        path:'',
+        name:'home',
+        component: Feed
+    }
+  ]
   },
   {
     path: '/',
