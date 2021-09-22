@@ -19,8 +19,14 @@
                 </div>
                 <div class="ml-3 col-8 pt-2">SMPN 10 TAPUNG</div>
               </div>
+               <table border="1">
+       <tr v-for="(alumni,index) in alumnies" :key="index">
+         <td>{{alumni.id_pelajar}}</td>
+       </tr>
+       tasdasd
+     </table>
               <div class="ml-5 text-muted">
-              10:12, 27 januari 2021
+              10:12, 27 januari 2021, 
               </div>
               <div class="mr-5 ml-5">
                 Salam hormat bagi seluruh alumni, dan juga pengguna alumni STAI
@@ -51,22 +57,29 @@
     </div>
 </template>
 <script>
-import axios from 'axios';
+import axios from "axios";
+import { onMounted, ref } from "vue";
 export default {
     setup(){
-        axios
+    let alumnies = ref([]);
+    onMounted(() => {
+      axios
         .get("http://127.0.0.1:8002/alumni", {
           headers: {
             "app-origins": "yes",
           },
         })
         .then((result) => {
-          console.log(result);
+          alumnies.value = result.data.data;
+          console.log(alumnies);
         })
         .catch((err) => {
           console.log(err);
         });
-  
-    }
+    });
+    return {
+      alumnies,
+    };
+  },
 }
 </script>

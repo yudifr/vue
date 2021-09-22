@@ -3,17 +3,23 @@ import Home from '../views/Home.vue'
 import Login from '../views/Login.vue'
 import NotFound from '../views/NotFound.vue'
 import Feed from '../components/home/Feed.vue'
+import Kuisioner from '../components/home/Kuisioner.vue'
 const routes = [
   {
-    path: '/home',
-    name: 'Home',
+    path: '/alumni',
+    name: 'alumni',
     component: Home,
     children: [
       {
         path:'',
         name:'home',
         component: Feed
-    }
+    },
+    {
+      path:'kuisioner',
+      name:'kuisioner',
+      component: Kuisioner
+  }
   ]
   },
   {

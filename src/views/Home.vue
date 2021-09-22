@@ -2,12 +2,7 @@
   <div class="home">
     <Navbar> </Navbar>
     <Navbar2> </Navbar2>
-    <!-- <table border="1">
-       <tr v-for="(alumni,index) in alumnies" :key="index">
-         <td>{{alumni.id_pelajar}}</td>
-       </tr>
-       tasdasd
-     </table> -->
+   
      
     
     <router-view>
