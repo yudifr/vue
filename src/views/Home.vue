@@ -27,6 +27,7 @@ hr {
 </style>
 <script>
 // @ is an alias to /src
+
 import Navbar from "@/components/home/Navbar.vue";
 import Navbar2 from "@/components/home/Navbar2.vue";
 import axios from "axios";
