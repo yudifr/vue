@@ -1,11 +1,23 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Login from '../views/Login.vue'
+import Register from '../views/Register.vue'
 import NotFound from '../views/NotFound.vue'
 import Feed from '../components/home/Feed.vue'
 import Kuisioner from '../components/home/Kuisioner.vue'
 const routes = [
   {
+    path: '/',
+    name: 'Login',
+    component: Login
+  },
+  {
+    path: '/register',
+    name: 'register',
+    component: Register
+  },
+  {
+    
     path: '/alumni',
     name: 'alumni',
     component: Home,
@@ -22,11 +34,7 @@ const routes = [
   }
   ]
   },
-  {
-    path: '/',
-    name: 'Login',
-    component: Login
-  },
+  
   {
     path: '/about',
     name: 'About',

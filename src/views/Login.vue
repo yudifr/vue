@@ -16,7 +16,6 @@
                   <div class="form-group">
                     <label class="form-label">
                       Password
-                      
                     </label>
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                   </div>
@@ -33,7 +32,7 @@
                 </div>
               </form>
               <div class="text-center text-muted">
-               <a href="#">Register</a> jika belum punya akun.
+               <router-link to="/register">Register</router-link> jika belum punya akun.
               </div>
             </div>
           </div>

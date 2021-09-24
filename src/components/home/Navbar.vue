@@ -82,7 +82,7 @@
 </template>
 <style scoped>
 .green{
-  background-color: #4bde72;
+  background-color: #affc32;
 }
 </style>
 <script>
