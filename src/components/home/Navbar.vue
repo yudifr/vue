@@ -1,5 +1,5 @@
 <template>
-  <div class="header green" style="margin">
+  <div class="header " style="margin">
           <div class="container ">
             <div class="d-flex">
               <a class="header-brand" href="./index.html">

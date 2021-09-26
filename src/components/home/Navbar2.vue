@@ -13,11 +13,11 @@
               <div class="col-lg order-lg-first">
                 <ul class="nav nav-tabs border-0 flex-column flex-lg-row">
                   <li class="nav-item">
-                    <router-link to="/alumni" class="nav-link active" id="home" @click="activeLink('kuisioner','home')"><i class="fe fe-home"></i> Home</router-link>
+                    <router-link to="/alumni" :class=" this.$route.path == '/alumni' ?  'nav-link active' : 'nav-link'"   id="home" ><i class="fe fe-home"></i> Home</router-link>
                   </li>
                   
                   <li class="nav-item dropdown">
-                    <router-link to="/alumni/kuisioner" class="nav-link" id="kuisioner" @click="activeLink('home','kuisioner')"><i class="fe fe-check-square"></i>Kuisioner</router-link>
+                    <router-link to="/alumni/kuisioner"  :class=" this.$route.path == '/alumni/kuisioner' ?  'nav-link active' : 'nav-link'"  id="kuisioner" ><i class="fe fe-check-square"></i>Kuisioner</router-link>
                   </li>
                  
                 </ul>
@@ -31,11 +31,7 @@
 export default {
   name: 'Navbar2',
   methods:{
-    activeLink(id,id2){
-      
-     document.getElementById(id).classList.remove('active');
-     document.getElementById(id2).classList.add('active');
-    },
+    
   }
 }
 </script>
