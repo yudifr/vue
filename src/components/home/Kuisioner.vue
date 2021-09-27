@@ -6,10 +6,9 @@
         <div class="contain">
         <form id="forma">
           
-            <div class="col-md-12 px-5">
-              <div class="form-group ">
-                <label class="form-label">Bidang pekerjaan Saudara termasuk Sektor : </label>
-                <input type="text" class="form-control" placeholder="Company" value="Creative Code Inc.">
+            
+              <div class=" col-md-12 px-5 form-group ">
+                <label class="form-label">Bidang pekerjaan anda termasuk Sektor : </label>
                 <div class="custom-control custom-radio">
                   <input required type="radio" id="pemerintah" v-model="alumni.bidangkerja" name="bidangkerja" class="custom-control-input" value="pemerintah" >
                   <label class="custom-control-label float-left" for="pemerintah">Pemerintah</label>
@@ -29,42 +28,111 @@
               </div>
               <div class="custom-control custom-radio">
                   <input type="radio" id="lainnya" v-model="alumni.bidangkerja" name="bidangkerja" class="custom-control-input" value="lainnya" >
-                  <label id="lainnya2" class="custom-control-label float-left" for="lainnya" >Lainnya</label>
+                  <label id="lainnya" class="custom-control-label float-left" for="lainnya" >Lainnya</label>
                   <input type="text" v-model="alumni.inputbidang" :class=" alumni.bidangkerja == 'lainnya' ?  '' : 'd-none'" id="inputbidang" class="form-control ml-2 float-left " >
               </div>
               </div>
-              </div>
-            
-            <div class="col-md-12 px-5">
-                  <div class="form-group">
-                    <label class="form-label">Apakah bidang pekerjaan Saudara saat ini sesuai dengan bidang studi yang Saudara ambil?</label>
-                    <div class="custom-control custom-radio">
-                        <input type="radio" required id="sesuai" v-model="alumni.sesuaikah" name="sesuaikah" class="custom-control-input" value="1">
-                        <label class="custom-control-label" for="sesuai">Sesuai</label>
-                    </div>
-                    <div class="custom-control custom-radio ">
-                        <input type="radio" id="tidaksesuai" v-model="alumni.sesuaikah" name="sesuaikah" class="custom-control-input" value="0">
-                        <label class="custom-control-label" for="tidaksesuai">Tidak Sesuai</label>
-                    </div>
-                </div>    
+
+              <div class="form-group col-md-12 px-5">
+                <label class="form-label">Apakah bidang pekerjaan anda saat ini sesuai dengan bidang studi yang anda ambil?</label>
+                <div class="custom-control custom-radio">
+                    <input type="radio" required id="sesuai" v-model="alumni.sesuaikah" name="sesuaikah" class="custom-control-input" value="1">
+                    <label class="custom-control-label" for="sesuai">Sesuai</label>
+                </div>
+                <div class="custom-control custom-radio ">
+                    <input type="radio" id="tidaksesuai" v-model="alumni.sesuaikah" name="sesuaikah" class="custom-control-input" value="0">
+                    <label class="custom-control-label" for="tidaksesuai">Tidak Sesuai</label>
+                </div>
+              </div>    
+             
+            <div class="form-group col-md-12 px-5">
+                <label class="form-label" for="simpleinput">Bagaimana cara anda mendapatkan pekerjaan pertama ?</label>
+                <select required v-model="alumni.kerja_pertama" class="form-control custom-select" id="kerja_pertama">
+                    <option value="" selected> Pilih </option>
+                    <option value="kompetisi">Berkompetisi (dengan tes)</option>
+                    <option value="rekomendasi">Rekomendasi (tanpa tes)</option>
+                    <option value="ditempatkan">Ditempatkan (karena ada ikatan dinas dsb.)</option>
+                    <option value="diminta">Diminta oleh pengguna</option>
+                    <option value="koneksi">Memanfaatkan koneksi</option>
+                    <option value="agen">Melalui agen tenaga kerja</option>
+                    <option value="unit">Melalui Unit Pengembangan Karir dan Penempatan Kerja </option>
+                    <option value="iklankan diri">Meng-iklankan diri sendiri melalui internet</option>
+                    <option value="wirausaha">Berwirausaha</option>
+                </select>
             </div>
-             <div class="col-md-12 px-5">
-            <div class="form-group">
-                                                            <label class="form-label" for="simpleinput">Bagaimana cara Saudara mendapatkan pekerjaan pertama ?</label>
-                                                            <select required v-model="alumni.kerja_pertama" class="form-control custom-select" id="kerja_pertama">
-                                                                <option value="" selected> Pilih </option>
-                                                                <option value="kompetisi">Berkompetisi (dengan tes)</option>
-                                                                <option value="rekomendasi">Rekomendasi (tanpa tes)</option>
-                                                                <option value="ditempatkan">Ditempatkan (karena ada ikatan dinas dsb.)</option>
-                                                                <option value="diminta">Diminta oleh pengguna</option>
-                                                                <option value="koneksi">Memanfaatkan koneksi</option>
-                                                                <option value="agen">Melalui agen tenaga kerja</option>
-                                                                <option value="unit">Melalui Unit Pengembangan Karir dan Penempatan Kerja </option>
-                                                                <option value="iklankan diri">Meng-iklankan diri sendiri melalui internet</option>
-                                                                <option value="wirausaha">Berwirausaha</option>
-                                                            </select>
-                                                        </div>
+           
+           
+            <div class="form-group col-md-12 px-5">
+                <label class="form-label" for="simpleinput">Berapa gaji anda per bulan untuk pekerjaan anda pertama kali ?</label>
+                                      
+                <select required class="form-control custom-select" v-model="alumni.gajipertama" id="gajipertama">
+                  <option value="" selected> Pilih </option>
+                  <option value="-1"> Kurang dari 1.000.000,00     </option>
+                  <option value="1-2">1.000.000 – &lt; 2.000.000</option>
+                  <option value="2-3">2.000.000 – &lt; 3.000.000</option>
+                  <option value="3-4">3.000.000 – &lt; 4.000.000</option>
+                  <option value="4+">&ge; 4.000.000	          </option>                                   
+                </select>
              </div>
+            
+            <div class="form-group col-md-12 px-5">
+              <label class="form-label" for="simpleinput">Apa sajakah hambatan anda dalam mendapatkan pekerjaan pertama?</label>
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" id="ipk" v-model="alumni.ipk" class="custom-control-input" value="ipk">
+                  <span class="custom-control-label">IPK tidak memenuhi syarat</span>
+                </label>
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" id="akreditasi" v-model="alumni.akreditasi" class="custom-control-input" value="akreditasi">
+                  <span class="custom-control-label">Akreditasi prodi kurang mendukung</span>
+                </label>
+                <label class="custom-control custom-checkbox">
+                  <input type="checkbox" id="kalah_saing" v-model="alumni.kalah_saing" class="custom-control-input" value="kalah_saing">
+                  <span class="custom-control-label">Kalah bersaing dengan pencari kerja yang lain</span>
+                </label>
+            </div>
+            <div class="form-group col-md-12 px-5">
+                <label class="form-label">Berapa kali anda pindah pernah pindah instansi/perusahaan?</label>
+                  <input type="number" class="form-control" name="asd" v-model="alumni.pindah">
+
+            </div>
+            <div class=" col-md-12 px-5 form-group ">
+                <label class="form-label">Apakah alasan anda pindah instansi/perusahaan? </label>
+                <div class="custom-control custom-radio">
+                  <input required type="radio" id="suasana" v-model="alumni.alasan_pindah" name="alasan_pindah" class="custom-control-input" value="suasana" >
+                  <label class="custom-control-label float-left" for="suasana">Suasana kerja</label>
+              </div>
+              <div class="custom-control custom-radio">
+                  <input type="radio" id="gaji" v-model="alumni.alasan_pindah" name="alasan_pindah" class="custom-control-input" value="gaji" >
+                  <label class="custom-control-label float-left" for="gaji">Besaran gaji</label>
+
+              </div>
+              <div class="custom-control custom-radio">
+                  <input type="radio" id="karir" v-model="alumni.alasan_pindah" name="alasan_pindah" class="custom-control-input" value="karir" >
+                  <label class="custom-control-label float-left" for="karir">Pengembangan karir</label>
+              </div>
+              
+              <div class="custom-control custom-radio">
+                  <input type="radio" id="lainnya2" v-model="alumni.alasan_pindah" name="alasan_pindah" class="custom-control-input" value="lainnya2" >
+                  <label id="lainnya2" class="custom-control-label float-left" for="lainnya2" >Lainnya</label>
+                  <input type="text" v-model="alumni.input_pindah" :class=" alumni.alasan_pindah == 'lainnya2' ?  '' : 'd-none'" id="input_pindah" class="form-control ml-2 float-left " >
+              </div>
+              </div>
+              <div class="form-group col-md-12 px-5">
+                <label class="form-label" for="simpleinput">Berapa gaji anda per bulan untuk pekerjaan anda Saat ini ?</label>
+                                      
+                <select required class="form-control custom-select" v-model="alumni.gaji_sekarang" id="gaji_sekarang">
+                  <option value="" selected> Pilih </option>
+                  <option value="-1"> Kurang dari 1.000.000,00     </option>
+                  <option value="1-2">1.000.000 – &lt; 2.000.000</option>
+                  <option value="2-3">2.000.000 – &lt; 3.000.000</option>
+                  <option value="3-4">3.000.000 – &lt; 4.000.000</option>
+                  <option value="4+">&ge; 4.000.000	          </option>                                   
+                </select>
+             </div>  
+                               
+
+                                                            
+      
         </form>
         </div>
       </div>
@@ -96,6 +164,9 @@ export default {
   data(){
     return{
       alumni :{
+        kerja_pertama: '',
+        gajipertama: '',
+        gajisekarang: '',
       }
     }
   },
