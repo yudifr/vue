@@ -169,240 +169,40 @@
                     <label class="custom-control-label" for="tidak_syaratipk">Tidak Sesuai</label>
                 </div>
             </div>
-            <div class="form-group col-md-12 px-5">
-                <label class="form-label">Apakah Materi yang anda dapatkan di institusi pendidikan cukup memadai untuk pekerjaan anda saat ini?</label>
-                 <table class=" table table-bordered ">
+            <div class="form-group  px-5">
+                <label class="form-label">Menurut anda bagaimanakan kualitas perguruan tinggi yang anda lalui?</label>
 
-                      <thead>
-                        <tr>
-                          <th>Tingkatan</th>
-                          <th>1</th>
-                          <th>2</th>
-                          <th>3</th>
-                          <th>4</th>
-                          <th>5</th>
-                         
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>SD</td>
+                <div class="custom-controls-stacked">
+                          <label class="form-check-label mr-2">Tidak Puas</label>
+                          <label class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" v-model="alumni.kuisioner1" name="kuisioner1" class="custom-control-input" value="1" checked="">
+                            <span class="custom-control-label">1</span>
+                          </label>
+                          <label class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" v-model="alumni.kuisioner1" name="kuisioner1" class="custom-control-input" value="2">
+                            <span class="custom-control-label">2</span>
+                          </label>
+                          <label class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" v-model="alumni.kuisioner1" name="kuisioner1" class="custom-control-input" value="3">
+                            <span class="custom-control-label">3</span>
+                          </label>
+                          <label class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" v-model="alumni.kuisioner1" name="kuisioner1" class="custom-control-input" value="4">
+                            <span class="custom-control-label">4</span>
+                          </label>
+                          <label class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" v-model="alumni.kuisioner1" name="kuisioner1" class="custom-control-input" value="5">
+                            <span class="custom-control-label">5</span>
+                          </label>
+                          <label class="form-check-label"> Puas</label>
+                        
+                        </div>
+                            
+                              
+                              
+                             
+                            
                           
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_sd" name="kuisioner1_sd" value="1">
-                            
-                          </td>
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_sd" name="kuisioner1_sd" value="2">
-                            
-                          </td>
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_sd" name="kuisioner1_sd" value="3">
-                            
-                          </td>
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_sd" name="kuisioner1_sd" value="4">
-                            
-                          </td>
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_sd" name="kuisioner1_sd" value="5">
-                            
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>SMP</td>
-                          
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_smp" name="kuisioner1_smp" value="1">
-                            
-                          </td>
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_smp" name="kuisioner1_smp" value="2">
-                            
-                          </td>
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_smp" name="kuisioner1_smp" value="3">
-                            
-                          </td>
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_smp" name="kuisioner1_smp" value="4">
-                            
-                          </td>
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_smp" name="kuisioner1_smp" value="5">
-                            
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>SMA</td>
-                          
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_sma" name="kuisioner1_sma" value="1">
-                            
-                          </td>
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_sma" name="kuisioner1_sma" value="2">
-                            
-                          </td>
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_sma" name="kuisioner1_sma" value="3">
-                            
-                          </td>
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_sma" name="kuisioner1_sma" value="4">
-                            
-                          </td>
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_sma" name="kuisioner1_sma" value="5">
-                            
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Perguruan Tinggi</td>
-                          
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_pt" name="kuisioner1_pt" value="1">
-                            
-                          </td>
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_pt" name="kuisioner1_pt" value="2">
-                            
-                          </td>
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_pt" name="kuisioner1_pt" value="3">
-                            
-                          </td>
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_pt" name="kuisioner1_pt" value="4">
-                            
-                          </td>
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_pt" name="kuisioner1_pt" value="5">
-                            
-                          </td>
-                        </tr>
-                       
-                      </tbody>
-                    </table>
-            </div>  
-            <br>
-             
-            <div class="form-group col-md-12 px-5">
-                                                   
-                <label class="form-label">Menurut anda bagaimanakah </label>
-      <table class=" table table-bordered ">
-
-                      <thead>
-                        <tr>
-                          <th>Tingkatan</th>
-                          <th>1</th>
-                          <th>2</th>
-                          <th>3</th>
-                          <th>4</th>
-                          <th>5</th>
-                         
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>SD</td>
-                          
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_sd" name="kuisioner1_sd" value="1">
-                            
-                          </td>
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_sd" name="kuisioner1_sd" value="2">
-                            
-                          </td>
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_sd" name="kuisioner1_sd" value="3">
-                            
-                          </td>
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_sd" name="kuisioner1_sd" value="4">
-                            
-                          </td>
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_sd" name="kuisioner1_sd" value="5">
-                            
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>SMP</td>
-                          
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_smp" name="kuisioner1_smp" value="1">
-                            
-                          </td>
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_smp" name="kuisioner1_smp" value="2">
-                            
-                          </td>
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_smp" name="kuisioner1_smp" value="3">
-                            
-                          </td>
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_smp" name="kuisioner1_smp" value="4">
-                            
-                          </td>
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_smp" name="kuisioner1_smp" value="5">
-                            
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>SMA</td>
-                          
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_sma" name="kuisioner1_sma" value="1">
-                            
-                          </td>
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_sma" name="kuisioner1_sma" value="2">
-                            
-                          </td>
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_sma" name="kuisioner1_sma" value="3">
-                            
-                          </td>
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_sma" name="kuisioner1_sma" value="4">
-                            
-                          </td>
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_sma" name="kuisioner1_sma" value="5">
-                            
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>Perguruan Tinggi</td>
-                          
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_pt" name="kuisioner1_pt" value="1">
-                            
-                          </td>
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_pt" name="kuisioner1_pt" value="2">
-                            
-                          </td>
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_pt" name="kuisioner1_pt" value="3">
-                            
-                          </td>
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_pt" name="kuisioner1_pt" value="4">
-                            
-                          </td>
-                          <td>
-                            <input type="radio" class="" v-model="alumni.kuisioner1_pt" name="kuisioner1_pt" value="5">
-                            
-                          </td>
-                        </tr>
-                       
-                      </tbody>
-                    </table>
             </div>
         </form>
         </div>

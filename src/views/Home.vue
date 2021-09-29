@@ -1,5 +1,4 @@
 <template>
-     <link href="../assets/css/dashboard.css" rel="stylesheet" />
   <div class="home">
     <Navbar> </Navbar>
     <Navbar2> </Navbar2>
