@@ -170,40 +170,244 @@
                 </div>
             </div>
             <div class="form-group  px-5">
-                <label class="form-label">Menurut anda bagaimanakan kualitas perguruan tinggi yang anda lalui?</label>
+                <label class="form-label">Kualitas perguruan tinggi</label>
 
                 <div class="custom-controls-stacked">
-                          <label class="form-check-label mr-2">Tidak Puas</label>
-                          <label class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" v-model="alumni.kuisioner1" name="kuisioner1" class="custom-control-input" value="1" checked="">
-                            <span class="custom-control-label">1</span>
-                          </label>
-                          <label class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" v-model="alumni.kuisioner1" name="kuisioner1" class="custom-control-input" value="2">
-                            <span class="custom-control-label">2</span>
-                          </label>
-                          <label class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" v-model="alumni.kuisioner1" name="kuisioner1" class="custom-control-input" value="3">
-                            <span class="custom-control-label">3</span>
-                          </label>
-                          <label class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" v-model="alumni.kuisioner1" name="kuisioner1" class="custom-control-input" value="4">
-                            <span class="custom-control-label">4</span>
-                          </label>
-                          <label class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" v-model="alumni.kuisioner1" name="kuisioner1" class="custom-control-input" value="5">
-                            <span class="custom-control-label">5</span>
-                          </label>
-                          <label class="form-check-label"> Puas</label>
-                        
-                        </div>
-                            
-                              
-                              
-                             
-                            
-                          
+                  <label class="form-check-label mr-2">Tidak Puas</label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner1" name="kuisioner1" class="custom-control-input" value="1" checked="">
+                    <span class="custom-control-label">1</span>
+                  </label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner1" name="kuisioner1" class="custom-control-input" value="2">
+                    <span class="custom-control-label">2</span>
+                  </label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner1" name="kuisioner1" class="custom-control-input" value="3">
+                    <span class="custom-control-label">3</span>
+                  </label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner1" name="kuisioner1" class="custom-control-input" value="4">
+                    <span class="custom-control-label">4</span>
+                  </label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner1" name="kuisioner1" class="custom-control-input" value="5">
+                    <span class="custom-control-label">5</span>
+                  </label>
+                  <label class="form-check-label"> Puas</label>
+                </div>
             </div>
+            <br>
+            <div class="form-group  px-5">
+                <label class="form-label">Isi mata kuliah</label>
+
+                <div class="custom-controls-stacked">
+                  <label class="form-check-label mr-2">Tidak Puas</label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner2" name="kuisioner2" class="custom-control-input" value="1" checked="">
+                    <span class="custom-control-label">1</span>
+                  </label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner2" name="kuisioner2" class="custom-control-input" value="2">
+                    <span class="custom-control-label">2</span>
+                  </label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner2" name="kuisioner2" class="custom-control-input" value="3">
+                    <span class="custom-control-label">3</span>
+                  </label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner2" name="kuisioner2" class="custom-control-input" value="4">
+                    <span class="custom-control-label">4</span>
+                  </label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner2" name="kuisioner2" class="custom-control-input" value="5">
+                    <span class="custom-control-label">5</span>
+                  </label>
+                  <label class="form-check-label"> Puas</label>
+                </div>
+                
+            </div>
+            <br>
+            <div class="form-group  px-5">
+                <label class="form-label">3. Kompetensi dosen</label>
+
+                <div class="custom-controls-stacked">
+                  <label class="form-check-label mr-2">Tidak Puas</label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner3" name="kuisioner3" class="custom-control-input" value="1" checked="">
+                    <span class="custom-control-label">1</span>
+                  </label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner3" name="kuisioner3" class="custom-control-input" value="2">
+                    <span class="custom-control-label">2</span>
+                  </label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner3" name="kuisioner3" class="custom-control-input" value="3">
+                    <span class="custom-control-label">3</span>
+                  </label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner3" name="kuisioner3" class="custom-control-input" value="4">
+                    <span class="custom-control-label">4</span>
+                  </label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner3" name="kuisioner3" class="custom-control-input" value="5">
+                    <span class="custom-control-label">5</span>
+                  </label>
+                  <label class="form-check-label"> Puas</label>
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group  px-5">
+                <label class="form-label">4. Pelayanan/bimbingan Dosen terhadap Mahasiswa</label>
+
+                <div class="custom-controls-stacked">
+                  <label class="form-check-label mr-2">Tidak Puas</label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner4" name="kuisioner4" class="custom-control-input" value="1" checked="">
+                    <span class="custom-control-label">1</span>
+                  </label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner4" name="kuisioner4" class="custom-control-input" value="2">
+                    <span class="custom-control-label">2</span>
+                  </label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner4" name="kuisioner4" class="custom-control-input" value="3">
+                    <span class="custom-control-label">3</span>
+                  </label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner4" name="kuisioner4" class="custom-control-input" value="4">
+                    <span class="custom-control-label">4</span>
+                  </label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner4" name="kuisioner4" class="custom-control-input" value="5">
+                    <span class="custom-control-label">5</span>
+                  </label>
+                  <label class="form-check-label"> Puas</label>
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group  px-5">
+                <label class="form-label">5. Kualitas pembelajaran</label>
+
+                <div class="custom-controls-stacked">
+                  <label class="form-check-label mr-2">Tidak Puas</label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner5" name="kuisioner5" class="custom-control-input" value="1" checked="">
+                    <span class="custom-control-label">1</span>
+                  </label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner5" name="kuisioner5" class="custom-control-input" value="2">
+                    <span class="custom-control-label">2</span>
+                  </label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner5" name="kuisioner5" class="custom-control-input" value="3">
+                    <span class="custom-control-label">3</span>
+                  </label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner5" name="kuisioner5" class="custom-control-input" value="4">
+                    <span class="custom-control-label">4</span>
+                  </label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner5" name="kuisioner5" class="custom-control-input" value="5">
+                    <span class="custom-control-label">5</span>
+                  </label>
+                  <label class="form-check-label"> Puas</label>
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group  px-5">
+                <label class="form-label">6. Sistem penilaian</label>
+
+                <div class="custom-controls-stacked">
+                  <label class="form-check-label mr-2">Tidak Puas</label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner6" name="kuisioner6" class="custom-control-input" value="1" checked="">
+                    <span class="custom-control-label">1</span>
+                  </label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner6" name="kuisioner6" class="custom-control-input" value="2">
+                    <span class="custom-control-label">2</span>
+                  </label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner6" name="kuisioner6" class="custom-control-input" value="3">
+                    <span class="custom-control-label">3</span>
+                  </label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner6" name="kuisioner6" class="custom-control-input" value="4">
+                    <span class="custom-control-label">4</span>
+                  </label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner6" name="kuisioner6" class="custom-control-input" value="5">
+                    <span class="custom-control-label">5</span>
+                  </label>
+                  <label class="form-check-label"> Puas</label>
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group  px-5">
+                <label class="form-label">7. Kualitas sarana dan prasarana akademik</label>
+
+                <div class="custom-controls-stacked">
+                  <label class="form-check-label mr-2">Tidak Puas</label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner7" name="kuisioner7" class="custom-control-input" value="1" checked="">
+                    <span class="custom-control-label">1</span>
+                  </label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner7" name="kuisioner7" class="custom-control-input" value="2">
+                    <span class="custom-control-label">2</span>
+                  </label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner7" name="kuisioner7" class="custom-control-input" value="3">
+                    <span class="custom-control-label">3</span>
+                  </label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner7" name="kuisioner7" class="custom-control-input" value="4">
+                    <span class="custom-control-label">4</span>
+                  </label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner7" name="kuisioner7" class="custom-control-input" value="5">
+                    <span class="custom-control-label">5</span>
+                  </label>
+                  <label class="form-check-label"> Puas</label>
+                </div>
+            </div>
+            <br>
+
+            <div class="form-group  px-5 mb-5">
+                <label class="form-label">8. Suasana akademik</label>
+
+                <div class="custom-controls-stacked">
+                  <label class="form-check-label mr-2">Tidak Puas</label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner8" name="kuisioner8" class="custom-control-input" value="1" checked="">
+                    <span class="custom-control-label">1</span>
+                  </label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner8" name="kuisioner8" class="custom-control-input" value="2">
+                    <span class="custom-control-label">2</span>
+                  </label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner8" name="kuisioner8" class="custom-control-input" value="3">
+                    <span class="custom-control-label">3</span>
+                  </label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner8" name="kuisioner8" class="custom-control-input" value="4">
+                    <span class="custom-control-label">4</span>
+                  </label>
+                  <label class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" v-model="alumni.kuisioner8" name="kuisioner8" class="custom-control-input" value="5">
+                    <span class="custom-control-label">5</span>
+                  </label>
+                  <label class="form-check-label"> Puas</label>
+                </div>
+            </div>
+
+            
         </form>
         </div>
       </div>
@@ -229,7 +433,7 @@ td{
   margin-right: auto;
 } */
 .contain{
-  padding: 5px 5px 5px 5px;
+  padding: 5px 5px 15px 5px;
   /* border: 1px grey outset; */
   margin-left: 10px;
   margin-right: 10px;
