@@ -1,10 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
+import Home from '../views/home/Home.vue'
 import Login from '../views/Login.vue'
 import Register from '../views/Register.vue'
 import NotFound from '../views/NotFound.vue'
 import Feed from '../components/home/Feed.vue'
-import Kuisioner from '../components/home/Kuisioner.vue'
+import Kuisioner from '../views/alumni/Kuisioner.vue'
+import KuisionerConsumer from '../views/consumer/Kuisioner.vue'
 const routes = [
   {
     path: '/',
@@ -24,17 +25,34 @@ const routes = [
     children: [
       {
         path:'',
-        name:'home',
+        name:'alumni.home',
         component: Feed
     },
     {
       path:'kuisioner',
-      name:'kuisioner',
+      name:'alumni.kuisioner',
       component: Kuisioner
   }
   ]
   },
-  
+  {
+    
+    path: '/consumer',
+    name: 'consumer',
+    component: Home,
+    children: [
+      {
+        path:'',
+        name:'consumer.home',
+        component: Feed
+    },
+    {
+      path:'kuisioner',
+      name:'consumer.kuisioner',
+      component: KuisionerConsumer
+  }
+  ]
+  },
   {
     path: '/about',
     name: 'About',

@@ -3,7 +3,7 @@
     <div class="card ">
       <div class="card-box">
         <h4 class="header-title my-3">Data Alumni</h4>
-        <div class="contain">
+        <div class="contain mb-3">
         <form id="forma">
           
             
@@ -414,6 +414,7 @@
     </div>
   </div>
  
+ <div class="contain"></div>
 </template>
 <style scoped>
 td{
