@@ -4,6 +4,7 @@ import Login from '../views/Login.vue'
 import Register from '../views/Register.vue'
 import NotFound from '../views/NotFound.vue'
 import Feed from '../components/home/Feed.vue'
+import ConsumerData from '../components/consumer/Data.vue'
 import Kuisioner from '../views/alumni/Kuisioner.vue'
 import KuisionerConsumer from '../views/consumer/Kuisioner.vue'
 const routes = [
@@ -44,7 +45,7 @@ const routes = [
       {
         path:'',
         name:'consumer.home',
-        component: Feed
+        component: ConsumerData
     },
     {
       path:'kuisioner',
