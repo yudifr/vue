@@ -5,6 +5,7 @@ import Register from '../views/Register.vue'
 import NotFound from '../views/NotFound.vue'
 import Feed from '../components/home/Feed.vue'
 import ConsumerData from '../components/consumer/Data.vue'
+import EmployeeProfile from '../components/consumer/EmployeeProfile.vue'
 import Kuisioner from '../views/alumni/Kuisioner.vue'
 import KuisionerConsumer from '../views/consumer/Kuisioner.vue'
 const routes = [
@@ -47,11 +48,17 @@ const routes = [
         name:'consumer.home',
         component: ConsumerData
     },
+    
     {
       path:'kuisioner',
       name:'consumer.kuisioner',
       component: KuisionerConsumer
-  }
+  },
+  {
+    path:'karyawan/:id',
+    name:'consumer.EmployeeProfile',
+    component: EmployeeProfile
+}
   ]
   },
   {
