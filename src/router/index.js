@@ -5,6 +5,7 @@ import Register from '../views/Register.vue'
 import NotFound from '../views/NotFound.vue'
 import Feed from '../components/home/Feed.vue'
 import ConsumerData from '../components/consumer/Data.vue'
+import ConsumerNewFeed from '../components/consumer/NewFeed.vue'
 import EmployeeProfile from '../components/consumer/EmployeeProfile.vue'
 import Kuisioner from '../views/alumni/Kuisioner.vue'
 import KuisionerConsumer from '../views/consumer/Kuisioner.vue'
@@ -25,16 +26,16 @@ const routes = [
     name: 'alumni',
     component: Home,
     children: [
-      {
-        path:'',
-        name:'alumni.home',
-        component: Feed
-    },
-    {
-      path:'kuisioner',
-      name:'alumni.kuisioner',
-      component: Kuisioner
-  }
+              {
+                path:'',
+                name:'alumni.home',
+                component: Feed
+            },
+              {
+                path:'kuisioner',
+                name:'alumni.kuisioner',
+                component: Kuisioner
+            }
   ]
   },
   {
@@ -43,17 +44,22 @@ const routes = [
     name: 'consumer',
     component: Home,
     children: [
-      {
-        path:'',
-        name:'consumer.home',
-        component: ConsumerData
-    },
-    
-    {
-      path:'kuisioner',
-      name:'consumer.kuisioner',
-      component: KuisionerConsumer
-  },
+              {
+                path:'',
+                name:'consumer.home',
+                component: ConsumerData
+            },
+            
+              {
+                path:'kuisioner',
+                name:'consumer.kuisioner',
+                component: KuisionerConsumer
+            },
+            {
+              path:'new-feed',
+              name:'consumer.new-feed',
+              component: ConsumerNewFeed
+          },
   {
     path:'karyawan/:id',
     name:'consumer.EmployeeProfile',

@@ -28,6 +28,20 @@
                             2020
                           </td>
                         </tr>
+                         <tr>
+                          <td>
+                            <div class="d-flex py-1 align-items-center">
+                              <span class="avatar me-2" style="background-image: url(./static/avatars/006m.jpg)"></span>
+                              <div class="flex-fill">
+                                
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            2020
+                          </td>
+                        </tr>
+                        
 
               <tr v-for="(alumni,index) in alumnies" :key="index">
                 <td>
