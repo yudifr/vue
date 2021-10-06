@@ -9,6 +9,8 @@ import ConsumerNewFeed from '../components/consumer/NewFeed.vue'
 import EmployeeProfile from '../components/consumer/EmployeeProfile.vue'
 import Kuisioner from '../views/alumni/Kuisioner.vue'
 import KuisionerConsumer from '../views/consumer/Kuisioner.vue'
+import InstitutionData from '../components/institution/Data.vue'
+
 const routes = [
   {
     path: '/',
@@ -60,13 +62,38 @@ const routes = [
               name:'consumer.new-feed',
               component: ConsumerNewFeed
           },
-  {
-    path:'karyawan/:id',
-    name:'consumer.EmployeeProfile',
-    component: EmployeeProfile
-}
+          {
+            path:'karyawan/:id',
+            name:'consumer.EmployeeProfile',
+            component: EmployeeProfile
+        }
   ]
   },
+  {
+    
+    path: '/institusi',
+    name: 'institution',
+    component: Home,
+    children: [
+              {
+                path:'',
+                name:'institution.home',
+                component: InstitutionData
+            },
+            
+            {
+              path:'new-feed',
+              name:'institution.new-feed',
+              component: ConsumerNewFeed
+          },
+          {
+            path:'karyawan/:id',
+            name:'institution.EmployeeProfile',
+            component: EmployeeProfile
+        }
+  ]
+  },
+
   {
     path: '/about',
     name: 'About',
