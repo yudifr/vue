@@ -130,13 +130,7 @@
                   <h3 class="card-title">Basic form</h3>
                 </div>
                 <div class="card-body">
-                 <div style="height:600px;width: 600px; display: flex;flex-direction:column;">
-    <vue3-chart-js
-        :id="barChart.id"
-        :type="barChart.type"
-        :data="barChart.data"
-    ></vue3-chart-js>
-  </div>
+                 <apexchart/>
                 </div>
               </div>
            </div>
@@ -227,38 +221,55 @@ td,th{
 }
 </style>
 <script>
-import Vue3ChartJs from '@j-t-mcc/vue3-chartjs'
-
+import axios from "axios";
+import apexchart from './chart.vue';
+// import { onMounted } from "vue";  
 export default {
   name: 'App',
   components: {
-    Vue3ChartJs,
-  },
-  setup () {
-    const barChart = {
-      id: 'bar',
-      type: 'bar',
-      data: {
-        labels: ['VueJs', 'EmberJs', 'ReactJs', 'AngularJs'],
-        datasets: [
-          {
-            backgroundColor: [
-              '#41B883',
-              '#E46651',
-              '#00D8FF',
-              '#DD1B16'
-            ],
-            data: [40, 20, 80, 10]
-          }
-        ]
-      }
-    }
+    apexchart 
 
+  },
+   data() {
+    return {
+      
+      
+    };
+  },
+ setup(){
+  
+  },
+  mounted(){
+  this.getAlumnies();
+  }
+  ,
+  created(){
+// this.getAlumnies();
+  },
+  methods:{
+    getAlumnies(){
+      axios
+       .get("http://127.0.0.1:8002/alumni", {
+          headers: {
+            "app-origins": "yes",
+          },
+        })
+        .then((result) => {
+          this.alumni = result.data.data;
+          
+        })
+    
+    },
+    
+     
+      
+    
     
 
-    return {
-      barChart,
+    },
+    computed:{
+     
     }
-  },
 }
+
 </script>
